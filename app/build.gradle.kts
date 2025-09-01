@@ -56,4 +56,28 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // In file: build.gradle.kts (Module: app)
+    dependencies {
+        // Jetpack Compose
+        implementation(platform("androidx.compose:compose-bom:2024.04.00"))
+        implementation("androidx.compose.ui:ui")
+        implementation("androidx.compose.ui:ui-graphics")
+        implementation("androidx.compose.ui:ui-tooling-preview")
+        implementation("androidx.compose.material3:material3")
+        implementation("androidx.compose.material:material-icons-extended")
+
+        // ViewModel and Lifecycle
+        implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+        implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+
+        // Coroutines and Flow
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
+
+        // Coil for Image Loading
+        implementation("io.coil-kt:coil-compose:2.6.0")
+
+        // Required for Material 3 icons
+        implementation("androidx.compose.material:material-icons-extended")
+    }
 }
